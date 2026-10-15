@@ -9,7 +9,7 @@ Each framework has its own objective and evidence standard. Choose the one that 
 | Workflow | Primary objective | Read the framework |
 | :--- | :--- | :--- |
 | **Research** | Develop a defensible scientific contribution and a stronger independent researcher. | [Research framework · v1.1](Research/Canonical_Pure_Academic_Research_Framework_v1.1.md) |
-| **Challenge** | Improve expected final/private performance under competition constraints. | [Challenge workflow · v1.0](Challenge/CANONICAL_CHALLENGE_WORKFLOW_v1.0.md) |
+| **Challenge** | Improve expected final/private performance under competition constraints. | [Challenge workflow · v1.1](Challenge/CANONICAL_CHALLENGE_WORKFLOW_v1.1.md) |
 | **Production** | Deliver correct, reliable, maintainable, and operable system behavior. | [Production workflow · v1.0](Production/CANONICAL_PRODUCTION_ENGINEERING_WORKFLOW_v1.0.md) |
 
 ## At a glance
@@ -28,7 +28,7 @@ An iterative scientific process built around deep understanding, competing expla
 
 A closed-loop optimization process built around measurement trust, informative experiments, resource constraints, and hidden-test performance.
 
-[Full workflow](Challenge/CANONICAL_CHALLENGE_WORKFLOW_v1.0.md) · [Changelog](Challenge/CHANGELOG.md)
+[Full workflow](Challenge/CANONICAL_CHALLENGE_WORKFLOW_v1.1.md) · [Quick reference](Challenge/CHALLENGE_QUICK_REFERENCE_v1.1.md) · [Agent execution protocol · v1.0](Challenge/CANONICAL_AGENT_EXECUTION_PROTOCOL_v1.0.md) · [Changelog](Challenge/CHANGELOG.md) · [v1.0 baseline](Challenge/CANONICAL_CHALLENGE_WORKFLOW_v1.0.md)
 
 ### Production
 
@@ -45,9 +45,9 @@ An engineering process built around observable contracts, validation proportiona
 - **A feature, bug, service, migration, or operational fix:** start with Production.
 - **A hybrid project:** use the relevant frameworks while keeping their objectives and success criteria separate.
 
-The full documents are the canonical references. The Research quick reference is a companion for everyday use. Production templates are copyable starting points for project-specific records.
+The full documents are the canonical references. The Research and Challenge quick references are companions for everyday use. The Agent Execution Protocol is an independently versioned, cross-domain companion; `Challenge/reference_tools/` holds an optional, tested clean-source gate. Production templates are copyable starting points for project-specific records.
 
-Version numbers in document titles and filenames identify each framework independently: Challenge **v1.0**, Production **v1.0**, and Research **v1.1**.
+Version numbers in document titles and filenames identify each framework independently: Challenge **v1.1** (v1.0 kept as a frozen baseline), Agent Execution Protocol **v1.0**, Production **v1.0**, and Research **v1.1**.
 
 ## Repository map
 
@@ -55,8 +55,14 @@ Version numbers in document titles and filenames identify each framework indepen
 .
 ├── README.md
 ├── Challenge/
+│   ├── CANONICAL_CHALLENGE_WORKFLOW_v1.1.md
+│   ├── CHALLENGE_QUICK_REFERENCE_v1.1.md
+│   ├── CANONICAL_AGENT_EXECUTION_PROTOCOL_v1.0.md
 │   ├── CANONICAL_CHALLENGE_WORKFLOW_v1.0.md
-│   └── CHANGELOG.md
+│   ├── CHANGELOG.md
+│   └── reference_tools/
+│       ├── require_clean_source.py
+│       └── test_require_clean_source.py
 ├── Production/
 │   ├── CANONICAL_PRODUCTION_ENGINEERING_WORKFLOW_v1.0.md
 │   └── templates/
